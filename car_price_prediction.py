@@ -12,11 +12,11 @@ def main():
     """
 
     model = xgb.XGBRegressor()
-    model.load_model("xgb_model.json")
-    # import os
+    #model.load_model("xgb_model.json")
+     import os
 
-    # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    # model_path = os.path.join(BASE_DIR, "xgb_model.json")
+     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+     model_path = os.path.join(BASE_DIR, "xgb_model.json")
 
     model.load_model(model_path)
     st.markdown(html_temp, unsafe_allow_html=True)
